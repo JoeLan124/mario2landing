@@ -6,6 +6,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: { primary: "#4A3AFF" },
       backgroundImage: {
         Hero: "url('../public/src/bgyellow.jpg')",
       },

@@ -38,7 +38,9 @@ const NavBar = () => {
           {/* mobile navbar */}
           <div className="relative h-screen w-screen md:hidden">
             <ul
-              className={`md:hidden flex flex-col bg-white absolute top-0 left-0 uppercase space-y-12 mt-16 pl-4`}>
+              className={`md:hidden flex flex-col bg-white absolute top-0 left-0 uppercase space-y-12 mt-16 pl-4 duration-500 ${
+                open ? "left-0" : "left-[-100%]"
+              }`}>
               <NavLinks />
               <div className="mt-2 md:hidden">
                 <Button />
