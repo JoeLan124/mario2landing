@@ -12,7 +12,7 @@ const NavBar = () => {
         open ? "bg-white" : "bg-transparent"
       } mx-auto md:bg-white opacity-70 text-sm md:text-xl text-[#336fac] sticky top-0`}>
       <div className="flex flex-col  md:flex-row md:justify-between w-full mx-auto">
-        <div className="flex justify-between bg-white opacity-70 ">
+        <div className="flex justify-between bg-white opacity-70">
           <Image
             className="flex items-center hover:cursor-pointer  mb-1 z-50 "
             height={100}
@@ -30,7 +30,7 @@ const NavBar = () => {
         </div>
 
         <div>
-          <div className="menu flex mt-2 px-4 items-center">
+          <div className="menu flex mt-2 px-4 items-center h-full">
             <ul className="md:flex hidden space-x-6 mr-4 uppercase">
               <NavLinks />
             </ul>
