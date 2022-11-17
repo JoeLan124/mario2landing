@@ -10,9 +10,9 @@ const NavBar = () => {
     <div
       className={` ${
         open ? "bg-white" : "bg-transparent"
-      } mx-auto md:bg-white opacity-70 text-sm md:text-xl text-[#336fac] sticky top-0`}>
+      } mx-auto md:bg-white  text-sm md:text-xl text-[#336fac] sticky top-0`}>
       <div className="flex flex-col  md:flex-row md:justify-between w-full mx-auto">
-        <div className="flex justify-between bg-white opacity-70">
+        <div className="flex justify-between bg-white">
           <Image
             className="flex items-center hover:cursor-pointer  mb-1 z-50 "
             height={100}
