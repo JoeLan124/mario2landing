@@ -13,13 +13,13 @@ export default function Home() {
 
       <section className="bg-Hero bg-cover h-screen opacity-80">
         <NavBar />
-        <h1 className="flex flex-col space-y-4 justify-center items-center text-center h-screen font-semibold text-2xl   text-black">
+        {/* <h1 className="flex flex-col space-y-4 justify-center items-center text-center h-full font-semibold text-2xl text-black">
           <p> Marios Landing Page</p>
           <p> Erfahrung und Empathie</p>
           <div className="text-xl">
             <Button />
           </div>
-        </h1>
+        </h1> */}
       </section>
     </div>
   );

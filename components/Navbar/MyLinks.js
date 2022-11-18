@@ -1,171 +1,81 @@
 export const mylinks = [
   {
-    name: "Men",
+    name: "Start",
+    submenu: false,
+    sublinks: [],
+  },
+  {
+    name: "Wissen",
     submenu: true,
     sublinks: [
       {
-        Head: "Topwear",
+        Head: "",
         sublink: [
-          { name: "T-shirt", link: "/" },
-          { name: "Casual shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-        ],
-      },
-      {
-        Head: "Bottomwear",
-        sublink: [
-          { name: "T-shirt", link: "/" },
-          { name: "Casual shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-        ],
-      },
-      {
-        Head: "innerwear",
-        sublink: [
-          { name: "T-shirt", link: "/" },
-          { name: "Casual shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-        ],
-      },
-
-      {
-        Head: "sleepwear",
-        sublink: [
-          { name: "T-shirt", link: "/" },
-          { name: "Casual shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-        ],
-      },
-      {
-        Head: "footwear",
-        sublink: [
-          { name: "T-shirt", link: "/" },
-          { name: "Casual shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
+          { name: "Notfallinfos", link: "/" },
+          { name: "Blog", link: "/" },
         ],
       },
     ],
   },
   {
-    name: "Women",
+    name: "Angebot",
     submenu: true,
     sublinks: [
       {
-        Head: "Topwear",
+        Head: "",
         sublink: [
-          { name: "T-shirt", link: "/" },
-          { name: "Casual shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-        ],
-      },
-      {
-        Head: "Bottomwear",
-        sublink: [
-          { name: "T-shirt", link: "/" },
-          { name: "Casual shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-        ],
-      },
-      {
-        Head: "innerwear",
-        sublink: [
-          { name: "T-shirt", link: "/" },
-          { name: "Casual shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-        ],
-      },
-
-      {
-        Head: "sleepwear",
-        sublink: [
-          { name: "T-shirt", link: "/" },
-          { name: "Casual shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-        ],
-      },
-      {
-        Head: "footwear",
-        sublink: [
-          { name: "T-shirt", link: "/" },
-          { name: "Casual shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
+          { name: "Übersicht", link: "/" },
+          { name: "Klopfen gegen Angst", link: "/" },
+          { name: "Unterstützer-Rettungsring", link: "/" },
+          {
+            name: "Naturcoaching Selbstführung",
+            link: "/",
+          },
+          { name: "Coaching", link: "/" },
+          {
+            name: "piKTV Kognitive Verhaltenstherapie",
+            link: "/",
+          },
         ],
       },
     ],
   },
   {
-    name: "Kid's",
+    name: "Honorar",
+    submenu: false,
+    sublinks: [
+      {
+        Head: "",
+        sublink: [
+          { name: "Notfallinfos", link: "/" },
+          { name: "Blog", link: "/" },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Über...",
     submenu: true,
     sublinks: [
       {
-        Head: "Topwear",
+        Head: "",
         sublink: [
-          { name: "T-shirt", link: "/" },
-          { name: "Casual shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
+          { name: "...Sie", link: "/" },
+          { name: "...mich", link: "/" },
         ],
       },
+    ],
+  },
+  {
+    name: "Kontakt",
+    submenu: true,
+    sublinks: [
       {
-        Head: "Bottomwear",
+        Head: "",
         sublink: [
-          { name: "T-shirt", link: "/" },
-          { name: "Casual shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-        ],
-      },
-      {
-        Head: "innerwear",
-        sublink: [
-          { name: "T-shirt", link: "/" },
-          { name: "Casual shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-        ],
-      },
-
-      {
-        Head: "sleepwear",
-        sublink: [
-          { name: "T-shirt", link: "/" },
-          { name: "Casual shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-        ],
-      },
-      {
-        Head: "footwear",
-        sublink: [
-          { name: "T-shirt", link: "/" },
-          { name: "Casual shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
-          { name: "formal shirts", link: "/" },
+          { name: "Datenschutz persönlich ", link: "/" },
+          { name: "Datenschutz juristisch ", link: "/" },
+          { name: "Impressum", link: "/" },
         ],
       },
     ],

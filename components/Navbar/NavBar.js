@@ -12,9 +12,9 @@ const NavBar = () => {
         open ? "bg-white" : "bg-transparent"
       } mx-auto md:bg-white  text-sm md:text-xl text-[#336fac] sticky top-0`}>
       <div className="flex flex-col  md:flex-row md:justify-between w-full mx-auto">
-        <div className="flex justify-between bg-white">
+        <div className="flex justify-between bg-white shrink-0">
           <Image
-            className="flex items-center hover:cursor-pointer  mb-1 z-50 "
+            className="flex items-center hover:cursor-pointer mb-1 z-50"
             height={100}
             width={175}
             src={"/src/image.png"}
@@ -31,11 +31,11 @@ const NavBar = () => {
 
         <div>
           <div className="menu flex mt-2 px-4 items-center h-full">
-            <ul className="md:flex hidden space-x-6 mr-4 uppercase">
+            <ul className="md:flex hidden space-x-4 md:mr-36 ">
               <NavLinks />
             </ul>
             <div className=" hidden md:flex justify-end items-center">
-              <Button />
+              {/* <Button /> */}
             </div>
           </div>
           {/* mobile navbar */}
@@ -46,7 +46,7 @@ const NavBar = () => {
               }`}>
               <NavLinks />
               <div className="mt-2 md:hidden">
-                <Button />
+                {/* <Button /> */}
               </div>
             </ul>
           </div>
