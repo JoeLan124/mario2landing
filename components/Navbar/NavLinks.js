@@ -5,6 +5,7 @@ import { mylinks } from "./MyLinks";
 const NavLinks = () => {
   const [heading, setHeading] = useState("");
   const [subHeading, setSubHeading] = useState("");
+  const [clicked, setClicked] = useState(false);
   return (
     <>
       {mylinks.map((link, index) => (
@@ -17,18 +18,29 @@ const NavLinks = () => {
                   ? setHeading(link.name)
                   : setHeading("");
                 setSubHeading("");
+                setClicked(!clicked);
               }}>
-              {link.name}
+              {
+                <p
+                  className={`${
+                    heading && heading === link.name
+                      ? "border-b border-blue-800"
+                      : "no-underline"
+                  }`}>
+                  {link.name}
+                </p>
+              }
               <span className="text-xl md:hidden inline">
-                <ion-icon
+                {/* <ion-icon
                   name={`${
                     heading === link.name
                       ? "chevron-up"
                       : "chevron-down"
-                  }`}></ion-icon>
+                  }`}></ion-icon> */}
               </span>
-              <span className="text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2">
-                <ion-icon name="chevron-down"></ion-icon>
+
+              <span className="text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-1">
+                {/* <ion-icon name="chevron-down"></ion-icon> */}
               </span>
             </h1>
             {link.submenu && (
@@ -46,14 +58,15 @@ const NavLinks = () => {
                           <h1 className="text-md font-semibold">
                             {mysublinks.Head}
                           </h1>
+
                           {mysublinks.sublink.map(
                             (slink, index) => (
                               <li
                                 key={index}
-                                className="text-md text-[#336fac] my-4">
+                                className="text-md my-4">
                                 <Link
                                   href={slink.link}
-                                  className="hover:text-primary">
+                                  className="">
                                   {slink.name}
                                 </Link>
                               </li>
@@ -84,22 +97,22 @@ const NavLinks = () => {
                         ? setSubHeading(slinks.Head)
                         : setSubHeading("")
                     }
-                    className="pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center md:pr-0 pr-5">
+                    className="pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center">
                     {slinks.Head}
 
                     <span className="text-xl md:mt-1 md:ml-2 inline">
-                      <ion-icon
+                      {/* <ion-icon
                         name={`${
                           subHeading === slinks.Head
                             ? "chevron-up"
                             : "chevron-down"
-                        }`}></ion-icon>
+                        }`}></ion-icon> */}
                     </span>
                   </h1>
                   <div
                     className={`${
                       subHeading === slinks.Head
-                        ? "md:hidden"
+                        ? "md:hidden text-[#4c7298]"
                         : "hidden"
                     }`}>
                     {slinks.sublink.map((slink, index) => (
@@ -118,6 +131,12 @@ const NavLinks = () => {
           </div>
         </div>
       ))}
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </>
   );
 };
