@@ -25,8 +25,8 @@ function show() {
           </svg>
         </div>
         {showMenue && (
-          <div className="space-y-4 bg-blue-600 w-full text-center rounded-lg">
-            <ul>Link 1</ul>
+          <div className="space-y-4 bg-blue-600 w-full rounded-lg pl-[45%]">
+            <ul className="">Link 1</ul>
             <ul
               className="relative"
               // onMouseEnter={() => setIsShown(true)}
@@ -34,7 +34,7 @@ function show() {
               onClick={() => setIsShown(!isShown)}>
               {!isShown ? (
                 <div className="">
-                  <span className="w-full text-center flex flex-row justify-center">
+                  <span className="w-full text-center flex flex-row justify-start">
                     Link 2
                     <svg
                       className=""
@@ -53,7 +53,7 @@ function show() {
                   </span>
                 </div>
               ) : (
-                <span className="w-full underline text-center flex flex-row justify-center">
+                <span className="w-full underline text-center flex flex-row justify-start">
                   Link 2
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -71,16 +71,16 @@ function show() {
                 </span>
               )}
               {isShown && (
-                <div className=" bg-blue-700 rounded-lg">
-                  <ul className="">
+                <div className="rounded-lg">
+                  <ul className="my-2">
                     <a href="/">
                       <span>Link A</span>
                     </a>
                   </ul>
-                  <ul className="">
+                  <ul className="mb-2">
                     <a href="/">Link B</a>
                   </ul>
-                  <ul className="">Link C</ul>
+                  <ul className="mb-6">Link C</ul>
                 </div>
               )}
             </ul>
