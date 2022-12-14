@@ -8,13 +8,16 @@ const ShowLinks = () => {
       className={`md:flex md:space-x-8 mx-4 space-y-1 md:space-y-0 md:mt-0 group"
       }`}>
       <ul>Link 1</ul>
+
       <ul
         className={`md:relative ${
           showDrop1 ? "underline" : "no-underline"
         }`}
         onClick={() => {
           setshowDrop1(!showDrop1);
-        }}>
+        }}
+        onMouseEnter={() => setshowDrop1(true)}
+        onMouseLeave={() => setshowDrop1(false)}>
         {showDrop1 ? (
           <div className="w-16 md:float-left">
             <span className="underline"> Link 2</span>
@@ -27,9 +30,10 @@ const ShowLinks = () => {
           </div>
         )}
       </ul>
+
       {showDrop1 && (
-        <div className="ml-4 md:absolute w-full group-hover">
-          <div className=" bg-slate-300 md:absolute top-8 left-10">
+        <div className="ml-4 md:absolute w-full grid grid-cols-1 group-hover">
+          <div className=" bg-slate-300 md:absolute top-5 left-10">
             <ul className="">Link A</ul>
             <ul className="">Link B</ul>
             <ul className="">Link C</ul>
