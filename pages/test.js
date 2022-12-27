@@ -136,14 +136,16 @@ function test() {
               {!showDrop1 ? (
                 <div className="w-auto">
                   <span className="w-full text-center flex flex-row justify-start">
-                    Wissen
+                    <div className="flex justify-start w-16">
+                      Wissen
+                    </div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      className="w-6 h-6 ml-2">
+                      className="w-6 h-6 ml-2 float-right">
                       <path
                         stroke-linecap="round"
                         stroke-linejoin="round"
@@ -154,14 +156,16 @@ function test() {
                 </div>
               ) : (
                 <span className="w-full underline text-center flex flex-row justify-start">
-                  Wissen
+                  <div className="flex justify-start w-16">
+                    Wissen
+                  </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    className="w-6 h-6 ml-2">
+                    className="w-6 h-6 ml-2 float-right">
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
@@ -194,14 +198,16 @@ function test() {
               {!showDrop2 ? (
                 <div className="w-auto">
                   <span className="w-full text-center flex flex-row justify-start">
-                    Angebot
+                    <div className="flex justify-start w-16">
+                      Angebot
+                    </div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      className="w-6 h-6 ml-2">
+                      className="w-6 h-6 ml-2 float-right">
                       <path
                         stroke-linecap="round"
                         stroke-linejoin="round"
@@ -212,14 +218,16 @@ function test() {
                 </div>
               ) : (
                 <span className="w-full underline text-center flex flex-row justify-start">
-                  Angebot
+                  <div className="flex justify-start w-16">
+                    Angebot
+                  </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    className="w-6 h-6 ml-2">
+                    className="w-6 h-6 ml-2 float-right">
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
@@ -269,7 +277,9 @@ function test() {
               {!showDrop3 ? (
                 <div className="w-auto">
                   <span className="w-full text-center flex flex-row justify-start">
-                    Über...
+                    <div className="flex justify-start w-16">
+                      Über...
+                    </div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -287,7 +297,9 @@ function test() {
                 </div>
               ) : (
                 <span className="w-full underline text-center flex flex-row justify-start">
-                  Über...
+                  <div className="flex justify-start w-16">
+                    Über...
+                  </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -326,7 +338,9 @@ function test() {
               {!showDrop4 ? (
                 <div className="w-auto">
                   <span className="w-full text-center flex flex-row justify-start">
-                    Kontakt
+                    <div className="flex justify-start w-16">
+                      Kontakt
+                    </div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -344,7 +358,9 @@ function test() {
                 </div>
               ) : (
                 <span className="w-full underline text-center flex flex-row justify-start">
-                  Kontakt
+                  <div className="flex justify-start w-16">
+                    Kontakt
+                  </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
