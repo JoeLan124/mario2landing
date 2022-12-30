@@ -59,7 +59,7 @@ const NavLinks = () => {
                             {mysublinks.Head}
                           </h1>
 
-                          {mysublinks.sublink.map(
+                          {mysublinks.sublinks.map(
                             (slink, index) => (
                               <li
                                 key={index}
@@ -99,15 +99,6 @@ const NavLinks = () => {
                     }
                     className="pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center">
                     {slinks.Head}
-
-                    <span className="text-xl md:mt-1 md:ml-2 inline">
-                      {/* <ion-icon
-                        name={`${
-                          subHeading === slinks.Head
-                            ? "chevron-up"
-                            : "chevron-down"
-                        }`}></ion-icon> */}
-                    </span>
                   </h1>
                   <div
                     className={`${
@@ -115,7 +106,7 @@ const NavLinks = () => {
                         ? "md:hidden text-[#4c7298]"
                         : "hidden"
                     }`}>
-                    {slinks.sublink.map((slink, index) => (
+                    {slinks.sublinks.map((slink, index) => (
                       <li
                         key={index}
                         className="py-3 pl-14">

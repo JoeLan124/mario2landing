@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import ShowLinks from "../components/ShowLinks";
+import ShowLinks from "../../components/ShowLinks";
 
 function show3() {
   const [showMenue, setShowMenue] = useState(false);

@@ -1,13 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
+import { mylinks } from "../../components/Navbar/MyLinks";
 
-function test() {
+function test2() {
   const [showMenue, setShowMenue] = useState(false);
   const [showDrop1, setShowDrop1] = useState(false);
   const [showDrop2, setShowDrop2] = useState(false);
   const [showDrop3, setShowDrop3] = useState(false);
   const [showDrop4, setShowDrop4] = useState(false);
+  const [heading, setHeading] = useState("");
+  const [subHeading, setSubHeading] = useState("");
   return (
     <div>
       <div className="h-[400vh] bg-green-500">
@@ -39,90 +43,34 @@ function test() {
 
           {/* Links MD*/}
           <div className=" hidden md:flex md:flex-row md:space-x-8 text-lg text-[#4c7298]">
-            {/* Link 1 */}
-            <div className="cursor-pointer group relative ">
-              <h1 className="group w-auto inline">Start</h1>
-              <div className="md:absolute top-6 hidden group-hover:block hover:block w-24"></div>
-            </div>
-            {/* Link 2 */}
-            <div className="cursor-pointer group relative text-lg">
-              <h1 className="group w-auto inline">
-                Wissen
-              </h1>
-              <div className="absolute top-6 hidden group-hover:md:block hover:md:block w-auto">
-                <div className="py-3">
-                  <div className="w-4 h-4 left-3 absolute top-10  bg-white rotate-45" />
-                </div>
-                <div className="mt-6 p-5 grid grid-cols-1 bg-white text-[#4c7298] w-24 divide-y divide-solid">
-                  <ul>Notfall-Infos</ul>
-                  <ul>Blog</ul>
-                </div>
-              </div>
-            </div>
-            {/* Link 3 */}
-            <div className="cursor-pointer group relative ">
-              <h1 className="group w-auto inline">
-                Honorar
-              </h1>
-              <div className="md:absolute top-6 hidden group-hover:block hover:block w-24"></div>
-            </div>
-            {/* Link 4 */}
-            <div>
-              <div className="cursor-pointer group relative">
-                <h1 className="group w-auto inline">
-                  Angebot
+            {mylinks.map((slinks, index) => (
+              <div key={index}>
+                <h1
+                  onClick={() =>
+                    subHeading !== slinks.Head
+                      ? setSubHeading(slinks.Head)
+                      : setSubHeading("")
+                  }>
+                  {slinks.Head}
                 </h1>
-                <div className="absolute top-6 hidden group-hover:md:block hover:md:block w-auto">
-                  <div className="py-3">
-                    <div className="w-4 h-4 left-3 absolute top-10 bg-white rotate-45" />
-                  </div>
-                  <div className="mt-6 p-5 grid grid-cols-1 bg-white text-[#4c7298] w-48 text-left divide-y divide-solid">
-                    <ul>Übersicht</ul>
-                    <ul>Klopfen gegen Angst</ul>
-                    <ul>Unterstützer-Rettungsring</ul>
-                    <ul>Naturcoaching Selbstführung</ul>
-                    <ul>Coaching</ul>
-                    <ul>
-                      piKVT kognitive Verhaltenstherapie
-                    </ul>
-                  </div>
+                <div
+                  className={`${
+                    subHeading === slinks.Head
+                      ? "md:hidden text-[#4c7298]"
+                      : "hidden"
+                  }`}>
+                  {slinks.sublinks.map((slink, index) => (
+                    <li key={index} className="py-3 pl-14">
+                      {/* <Link href={slink.link}>
+                        {slink.name}
+                      </Link> */}
+                    </li>
+                  ))}
                 </div>
               </div>
-            </div>
-            {/* Link 5 */}
-            <div className="cursor-pointer group relative">
-              <h1 className="group w-auto inline">
-                Über...
-              </h1>
-              <div className="absolute top-6 hidden group-hover:md:block hover:md:block w-auto">
-                <div className="py-3">
-                  <div className="w-4 h-4 left-3 absolute top-10 bg-white rotate-45" />
-                </div>
-                <div className="mt-6 p-5 grid grid-cols-1 bg-white text-[#4c7298] w-24 text-left divide-y divide-solid">
-                  <ul>...Sie</ul>
-                  <ul>...mich</ul>
-                </div>
-              </div>
-            </div>
-            {/* Link 6 */}
-            <div className="cursor-pointer group relative">
-              <h1 className="group w-auto inline">
-                Kontakt
-              </h1>
-              <div className="absolute top-6 hidden group-hover:md:block hover:md:block w-auto">
-                <div className="py-3">
-                  <div className="w-4 h-4 left-3 absolute top-10 bg-white rotate-45" />
-                </div>
-                <div className="mt-6 p-5 grid grid-cols-1 bg-white text-[#4c7298] w-36 text-left divide-y divide-solid">
-                  <ul>Datenschutz persönlich</ul>
-                  <ul>Datenschutz juristisch</ul>
-                  <ul>Impressum</ul>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-
         {/* Links mobile view */}
         {showMenue && (
           <div className="flex flex-col md:hidden w-full md:space-y-0 md:space-x-4 space-y-4 rounded-lg pl-20 text-[#4c7298] select-none">
@@ -400,4 +348,4 @@ function test() {
   );
 }
 
-export default test;
+export default test2;
