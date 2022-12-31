@@ -87,54 +87,82 @@ function NavBarNew() {
             {/* Link 4 */}
             <div>
               <div className="cursor-pointer group relative">
-                <h1 className="group w-auto inline">
-                  Angebot
-                </h1>
+                <Link href="/angebot">
+                  <h1 className="group w-auto inline">
+                    Angebot
+                  </h1>
+                </Link>
                 <div className="absolute top-6 hidden group-hover:md:block hover:md:block w-auto">
                   <div className="py-3">
                     <div className="w-4 h-4 left-3 absolute top-10 bg-white rotate-45" />
                   </div>
                   <div className="mt-6 p-5 grid grid-cols-1 bg-white text-[#4c7298] w-48 text-left divide-y divide-solid">
-                    <ul>Übersicht</ul>
-                    <ul>Klopfen gegen Angst</ul>
-                    <ul>Unterstützer-Rettungsring</ul>
-                    <ul>Naturcoaching Selbstführung</ul>
-                    <ul>Coaching</ul>
-                    <ul>
-                      piKVT kognitive Verhaltenstherapie
-                    </ul>
+                    <Link href="/uebersicht">
+                      <ul>Übersicht</ul>
+                    </Link>
+                    <Link href="/klopfen">
+                      <ul>Klopfen gegen Angst</ul>
+                    </Link>
+                    <Link href="/rettungsring">
+                      <ul>Unterstützer-Rettungsring</ul>
+                    </Link>
+                    <Link href="/naturcoaching">
+                      <ul>Naturcoaching Selbstführung</ul>
+                    </Link>
+                    <Link href="/coaching">
+                      <ul>Coaching</ul>
+                    </Link>
+                    <Link href="pikvt">
+                      <ul>
+                        piKVT kognitive Verhaltenstherapie
+                      </ul>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
             {/* Link 5 */}
             <div className="cursor-pointer group relative">
-              <h1 className="group w-auto inline">
-                Über...
-              </h1>
+              <Link href="/ueber">
+                <h1 className="group w-auto inline">
+                  Über...
+                </h1>
+              </Link>
               <div className="absolute top-6 hidden group-hover:md:block hover:md:block w-auto">
                 <div className="py-3">
                   <div className="w-4 h-4 left-3 absolute top-10 bg-white rotate-45" />
                 </div>
                 <div className="mt-6 p-5 grid grid-cols-1 bg-white text-[#4c7298] w-24 text-left divide-y divide-solid">
-                  <ul>...Sie</ul>
-                  <ul>...mich</ul>
+                  <Link href="/uebersie">
+                    <ul>...Sie</ul>
+                  </Link>
+                  <Link href="/uebermich">
+                    <ul>...mich</ul>
+                  </Link>
                 </div>
               </div>
             </div>
             {/* Link 6 */}
             <div className="cursor-pointer group relative">
-              <h1 className="group w-auto inline">
-                Kontakt
-              </h1>
+              <Link href="/kontakt">
+                <h1 className="group w-auto inline">
+                  Kontakt
+                </h1>
+              </Link>
               <div className="absolute top-6 hidden group-hover:md:block hover:md:block w-auto">
                 <div className="py-3">
                   <div className="w-4 h-4 left-3 absolute top-10 bg-white rotate-45" />
                 </div>
                 <div className="mt-6 p-5 grid grid-cols-1 bg-white text-[#4c7298] w-36 text-left divide-y divide-solid">
-                  <ul>Datenschutz persönlich</ul>
-                  <ul>Datenschutz juristisch</ul>
-                  <ul>Impressum</ul>
+                  <Link href="/datenpers">
+                    <ul>Datenschutz persönlich</ul>
+                  </Link>
+                  <Link href="/datenjur">
+                    <ul>Datenschutz juristisch</ul>
+                  </Link>
+                  <Link href="/impressum">
+                    <ul>Impressum</ul>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -222,9 +250,11 @@ function NavBarNew() {
               {!showDrop2 ? (
                 <div className="w-auto">
                   <span className="w-full text-center flex flex-row justify-start">
-                    <div className="flex justify-start w-16">
-                      Angebot
-                    </div>
+                    <Link href="/angebot">
+                      <div className="flex justify-start w-16">
+                        Angebot
+                      </div>
+                    </Link>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -242,9 +272,11 @@ function NavBarNew() {
                 </div>
               ) : (
                 <span className="w-full underline text-center flex flex-row justify-start">
-                  <div className="flex justify-start w-16">
-                    Angebot
-                  </div>
+                  <Link href="/angebot">
+                    <div className="flex justify-start w-16">
+                      Angebot
+                    </div>
+                  </Link>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -301,9 +333,11 @@ function NavBarNew() {
               {!showDrop3 ? (
                 <div className="w-auto">
                   <span className="w-full text-center flex flex-row justify-start">
-                    <div className="flex justify-start w-16">
-                      Über...
-                    </div>
+                    <Link href="/ueber">
+                      <div className="flex justify-start w-16">
+                        Über...
+                      </div>
+                    </Link>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -321,9 +355,11 @@ function NavBarNew() {
                 </div>
               ) : (
                 <span className="w-full underline text-center flex flex-row justify-start">
-                  <div className="flex justify-start w-16">
-                    Über...
-                  </div>
+                  <Link href="/ueber">
+                    <div className="flex justify-start w-16">
+                      Über...
+                    </div>
+                  </Link>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -342,14 +378,16 @@ function NavBarNew() {
               {/* dropdown */}
               {showDrop3 && (
                 <div className="rounded-lg pl-2">
-                  <ul className="my-2">
-                    <a href="/">
+                  <Link href="/uebersie">
+                    <ul className="my-2">
                       <span>...Sie</span>
-                    </a>
-                  </ul>
-                  <ul className="mb-2">
-                    <a href="/">...mich</a>
-                  </ul>
+                    </ul>
+                  </Link>
+                  <Link href="/uebermich">
+                    <ul className="mb-2">
+                      <span>...mich</span>
+                    </ul>
+                  </Link>
                 </div>
               )}
             </ul>
@@ -362,9 +400,11 @@ function NavBarNew() {
               {!showDrop4 ? (
                 <div className="w-auto">
                   <span className="w-full text-center flex flex-row justify-start">
-                    <div className="flex justify-start w-16">
-                      Kontakt
-                    </div>
+                    <Link href="/kontakt">
+                      <div className="flex justify-start w-16 mb-6">
+                        Kontakt
+                      </div>
+                    </Link>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -382,9 +422,11 @@ function NavBarNew() {
                 </div>
               ) : (
                 <span className="w-full underline text-center flex flex-row justify-start">
-                  <div className="flex justify-start w-16">
-                    Kontakt
-                  </div>
+                  <Link href="/kontakt">
+                    <div className="flex justify-start w-16">
+                      Kontakt
+                    </div>
+                  </Link>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -403,17 +445,22 @@ function NavBarNew() {
               {/* dropdown */}
               {showDrop4 && (
                 <div className="rounded-lg pl-2">
-                  <ul className="my-2">
-                    <a href="/">
+                  <Link href="/datenpers">
+                    <ul className="my-2">
                       <span>Datenschutz persönlich</span>
-                    </a>
-                  </ul>
-                  <ul className="mb-2">
-                    <a href="/">Datenschutz juristisch</a>
-                  </ul>
-                  <ul className="mb-2">
-                    <a href="/">Impressum</a>
-                  </ul>
+                    </ul>
+                  </Link>
+                  <Link href="/datenjur">
+                    <ul className="mb-2">
+                      <span>Datenschutz juristisch</span>
+                    </ul>
+                  </Link>
+
+                  <Link href="/impressum">
+                    <ul className="mb-6">
+                      <span>Impressum</span>
+                    </ul>
+                  </Link>
                 </div>
               )}
             </ul>
