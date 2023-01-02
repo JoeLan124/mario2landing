@@ -15,7 +15,7 @@ function NavBarNew() {
   return (
     <div className="bg-slate-100 top-0 w-full sticky">
       <div className=" bg-opacity-20">
-        <div className="flex md:justify-between items-center first-letter:p-4 pl-4 md:pr-36 mt-0 space-x-4 sticky bg-white top-0 shadow-xl select-none">
+        <div className="flex md:justify-between items-center first-letter:p-4 pl-4 md:pr-36 mt-0 space-x-4 sticky md:bg-white top-0 shadow-xl select-none">
           {/* // logo-icon */}
           <Image
             className="flex items-center hover:cursor-pointer mt-0 z-50 select-none"
@@ -44,7 +44,7 @@ function NavBarNew() {
           </div>
 
           {/* Links MD*/}
-          <div className=" hidden md:flex md:flex-row md:space-x-8 text-lg text-[#4c7298] bg-white">
+          <div className=" hidden md:flex md:flex-row md:space-x-8 text-lg text-[#4c7298] md:bg-white ">
             {/* Link 1 */}
             <div className="cursor-pointer group relative ">
               <Link href="/">
@@ -171,7 +171,7 @@ function NavBarNew() {
 
         {/* Links mobile view */}
         {showMenue && (
-          <div className="flex flex-col md:hidden w-full md:space-y-0 md:space-x-4 space-y-4 rounded-lg pl-20 text-[#4c7298] select-none bg-opacity-50">
+          <div className="flex flex-col md:hidden w-full md:space-y-0 md:space-x-4 space-y-4 rounded-lg pl-20 text-[#4c7298] select-none">
             {/* link without dropdown */}
             <Link href="/">
               <ul className="w-auto mt-4">Start</ul>
