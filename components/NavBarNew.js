@@ -17,13 +17,15 @@ function NavBarNew() {
       <div className=" bg-opacity-20">
         <div className="flex md:justify-between items-center first-letter:p-4 pl-4 md:pr-36 mt-0 space-x-4 sticky md:bg-white top-0 shadow-xl select-none">
           {/* // logo-icon */}
-          <Image
-            className="flex items-center hover:cursor-pointer mt-0 z-50 select-none"
-            height={100}
-            width={175}
-            src={"/src/image.png"}
-            alt={"logo"}
-          />
+          <Link href="/">
+            <Image
+              className="flex items-center hover:cursor-pointer mt-0 z-50 select-none"
+              height={100}
+              width={175}
+              src={"/src/image.png"}
+              alt={"logo"}
+            />
+          </Link>
 
           {/* hamburger / menu icon */}
           <div className="md:hidden flex text-lg text-[#4c7298] justify-end items-center h-full w-full pr-8">

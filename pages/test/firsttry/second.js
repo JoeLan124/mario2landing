@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Button from "../../components/Button";
-import NavBar from "../../components/Navbar/NavBar";
+import Button from "../../../components/Navbar/Button";
+import NavBar from "../../../components/Navbar/NavBar";
 
 export default function Home() {
   return (
